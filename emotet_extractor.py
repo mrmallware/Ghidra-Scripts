@@ -1,5 +1,4 @@
 import argparse
-import binascii
 import os
 import pefile
 import struct
