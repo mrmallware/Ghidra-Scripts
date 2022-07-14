@@ -59,21 +59,8 @@ def c2_decode(data_data):
     for i in range(0,len(c2),8):
         print("%d.%d.%d.%d:%d" % (c2[i+0],c2[i+1],c2[i+2],c2[i+3],struct.unpack('>H',c2[i+4:i+6])[0]))
 
-
 def is_ascii(s):
     return all(c < 128 for c in s)
-
-def unhex(hex_string):
-    if type(hex_string) == str:
-        return binascii.unhexlify(hex_string.encode('utf-8'))
-    else:
-        return binascii.unhexlify(hex_string)
-
-def tohex(data):
-    if type(data) == str:
-        return binascii.hexlify(data.encode('utf-8'))
-    else:
-        return binascii.hexlify(data)
 
 def xor_decrypt(data,key):
     out = []
