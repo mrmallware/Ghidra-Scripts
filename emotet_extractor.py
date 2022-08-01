@@ -8,6 +8,7 @@ import sys
 '''
 To Do:
     Fix the args stuff
+    Ghidra script - put in comments
 
     Add parsing for c2s
         - separate IPs/Ports?
