@@ -1,3 +1,3 @@
-# Scripts
+# malware_scripts
 
-`emotet_extractor.py -f <file>`
+Scripts for malware analysis
